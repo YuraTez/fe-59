@@ -1,0 +1,90 @@
+@import url('https://fonts.cdnfonts.com/css/open-sans?styles=17414,169189,169190,17413,17415,17416,17407,17408,17410,20532');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.flex-block{
+  display: flex;
+  flex-direction: row;
+  /*flex-wrap: wrap;*/
+ /* flex-direction: column;*/
+ /* flex-direction: row-reverse;
+  flex-direction: column-reverse;*/
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  /*justify-content: space-around;*/
+  align-items: stretch;
+  /*align-items: center;
+  align-items: flex-start;
+  align-items: flex-end;*/
+  /*align-items: center;*/
+  border: 2px solid black;
+}
+
+.flex-block__el{
+  width: 370px;
+  padding: 20px;
+  border: 1px solid silver;
+  background: #ec7979;
+  color: white;
+ /* flex-grow: 1;*/
+}
+
+.flex-block__el--big{
+  height: 200px;
+}
+
+.flex-block__el--end{
+  align-self: flex-end;
+  align-self: flex-start;
+  align-self: center;
+  align-self: stretch;
+  align-content: center;
+  align-items: stretch;
+  flex-shrink: 0;
+}
+
+/*.flex-block__el-1{
+  order: 2;
+}
+
+.flex-block__el-2{
+  order: 3;
+}
+
+.flex-block__el-3{
+  order: 1;
+}*/
+
+.block{
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+  border: 1px solid black;
+}
+
+.block-el{
+  width: calc(100% / 3 - 60px / 3);
+  padding: 20px;
+  border: 1px solid silver;
+  background: #ec7979;
+  color: white;
+}
+
+
+
