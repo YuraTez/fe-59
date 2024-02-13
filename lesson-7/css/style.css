@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.container{
+  max-width: 1200px;
+  padding: 100px 15px;
+  margin: 0 auto;
+}
+
+
+.italic{
+  font-style: italic;
+}
+
+.social-list{
+  display: flex;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.social-list__el i{
+  font-size: 45px;
+  color: #CCCCCC;
+  transition: .3s;
+}
+
+.social-list__el i:hover{
+  color: red;
+}
+
+.social-list__el i.fa-twitter:hover{
+  color: cadetblue;
+  transform: scale(1.5);
+}
+
+.social-list__el i.fa-instagram:hover{
+  color: coral;
+  transform: scale(0.5);
+}
+
+.price-elem{
+  border: 1px solid silver;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.price-elem:hover{
+ box-shadow: 0 0 20px 1px rgba(252, 18, 18, 0.3);
+}
+
+.link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: coral;
+  border: 1px solid silver;
+  width: 200px;
+  height: 50px;
+  color: white;
+  transition: .3s;
+}
+
+.link:hover{
+  width: 250px;
+  background: #ec7979;
+  color: brown;
+  border-radius: 5px;
+}
+
+.transform-inner{
+  background: #ec7979;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.translate{
+  width: 200px;
+  height: 200px;
+  border: 1px solid silver;
+  background: silver;
+  transform: translate(10px , -10px);
+}
+
+.title{
+  position: relative;
+  padding-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.title:before{
+  position: absolute;
+  content: "";
+  width: 370px;
+  height: 1px;
+  background: red;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50% , 0 );
+}
+
+.overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.popup{
+  position: fixed;
+  width: 500px;
+  height: 400px;
+  background: white;
+  border-radius: 20px;
+  top: 50%;
+  left: -100%;
+  transform: translate(-50% , -50%);
+  z-index: 2;
+  padding: 20px;
+  transition: .3s;
+}
+
+.popup.active{
+  left: 50%;
+}
+
+.rotate{
+  position: relative;
+  width: 20px;
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.rotate:hover{
+  transform: rotate(0);
+  top: 6px;
+  left: -2px;
+}
+
+.skew{
+  width: 50px;
+  height: 50px;
+  background: black;
+  transform: skew(20deg , 20deg);
+}
