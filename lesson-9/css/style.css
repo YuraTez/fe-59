@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  resize: none;
+}
+
+html{
+  font-size: 10px;
+}
+
+.container{
+  max-width: 1200px;
+  padding: 100px 15px;
+  margin: 0 auto;
+}
+
+/*
+.box{
+  width: 50vw;
+  height: 50vh;
+  background: rebeccapurple;
+}
+
+.box-elem{
+  width: 50%;
+  background: #ec7979;
+}
+
+.box-elem__title{
+  width: 100%;
+}*/
+
+.list{
+  font-size: 32px;
+}
+
+.sublist {
+  font-size: 0.7em;
+  padding-left: 20px;
+}
+
+/*
+.sublist{
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.sublist .sublist{
+  font-size: 18px;
+}*/
+
+
+.btn{
+  font-size: 32px;
+  margin-left: 60px;
+  background: #ec7979;
+  padding: 16px 32px;
+  border: 2px solid silver;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.btn--lg{
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: 0.02em solid silver;
+  box-shadow: 0 0 0.1em 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.btn--rem{
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 0.02rem solid silver;
+  box-shadow: 0 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.btn--lg{
+  font-size: 16px;
+}
+
+
+.title{
+  font-size: 4.8rem;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1020px) {
+  html{
+    font-size: 7.5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
