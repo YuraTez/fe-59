@@ -1,0 +1,46 @@
+.header{
+  background: $black;
+  padding: 50px;
+
+  &-content{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo{
+    font-size: $link;
+    color: $white;
+  }
+
+}
+
+.nav-list{
+  display: flex;
+  gap: 25px;
+
+  &__el{
+    position: relative;
+    font-size: $link;
+    color: $white;
+    cursor: pointer;
+    transition: .3s;
+    padding-right: 15px;
+
+    &:hover{
+      color: $coral;
+    }
+
+    &:not(:last-child):before{
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 3px;
+      right: -5px;
+      top: 50%;
+      transform: translate(0, -50%);
+      background: $white;
+      border-radius: 50%;
+    }
+
+  }
+}

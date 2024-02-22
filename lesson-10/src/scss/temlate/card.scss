@@ -1,0 +1,11 @@
+/*Шаблон*/
+
+%card{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 60px / 3);
+  border: 1px solid $silver;
+  border-radius: $br;
+  background: $white;
+  padding: 20px;
+}
